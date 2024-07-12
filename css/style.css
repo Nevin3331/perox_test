@@ -248,6 +248,8 @@ header {
   justify-content: space-between;
 }
 .telegram, .viber {
+  display: flex;
+  align-items: center;
   color: #FFF;
   text-align: center;
   font-family: Inter;
@@ -1578,6 +1580,7 @@ div.jx-handle.transition {
   margin-top: 40px;
 }
 .menu_laptop {
+	height: 1699px;
   position: absolute;
   top: 0;
   padding: 45px 40px 40px 40px;
@@ -2080,7 +2083,7 @@ div.jx-handle.transition {
   }
   .footer_item_three {
     margin-top: 32px;
-    gap: 32%;
+    gap: 15%;
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -2155,12 +2158,16 @@ div.jx-handle.transition {
     width: 100%;
   }
   .more_right_telegram, .more_right_instagram {
-    padding: 17px 35px;
+    padding: 17px 16px;
   }
   .map_wrapper {
     width: 85%;
     padding: 25px 26px;
   }
+.copyright {
+    flex-direction: column;
+    align-items: center;
+}
 }
 @media screen and (max-width: 375px) {
   .footer_nav {
@@ -2184,6 +2191,10 @@ div.jx-handle.transition {
     flex-wrap: wrap;
     align-items: center;
   }
+  .made_by_three {
+        display: flex;
+	justify-content: center;
+    }
 }
 @media screen and (max-width: 320px) {
   .main_button {
@@ -2192,4 +2203,7 @@ div.jx-handle.transition {
   .telegram, .viber {
     padding: 7px;
   }
+.footer_tel {
+    flex-direction: column;
+}
 }
